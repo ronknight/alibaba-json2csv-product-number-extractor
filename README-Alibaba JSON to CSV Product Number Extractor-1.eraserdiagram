@@ -1,0 +1,41 @@
+flowchart-diagram
+
+title Alibaba JSON to CSV Product Number Extractor
+
+// Define groups for better organization
+Setup [color: lightblue] {
+  Clone Repository [icon: git-branch]
+  Navigate to Directory [icon: folder]
+  Place JSON Files [icon: file]
+}
+
+Execution [color: lightgreen] {
+  Run Script [icon: play]
+  Process JSON Files [icon: file-text]
+  Extract red_model [icon: filter]
+  Write to CSV [icon: file-text]
+  Show Progress [icon: bar-chart-2]
+}
+
+Error Handling [color: lightcoral] {
+  Log Errors [icon: alert-triangle]
+  Handle Errors [icon: tool]
+}
+
+// Define the flow
+Start [shape: oval, icon: play-circle] > Clone Repository
+Clone Repository > Navigate to Directory
+Navigate to Directory > Place JSON Files
+Place JSON Files > Run Script
+
+Run Script > Process JSON Files
+Process JSON Files > Extract red_model
+Extract red_model > Write to CSV
+Write to CSV > Show Progress
+
+Process JSON Files > Log Errors: Error
+Log Errors > Handle Errors
+Handle Errors > End [shape: oval, icon: stop-circle]
+
+Show Progress > End [shape: oval, icon: stop-circle]
+
