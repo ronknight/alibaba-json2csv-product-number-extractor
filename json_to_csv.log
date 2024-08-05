@@ -1,0 +1,5 @@
+2024-08-05 23:07:50,792 - INFO - Found 3 JSON files.
+2024-08-05 23:07:50,846 - INFO - Processed file productlist_response_2024-08-05_225912.json: extracted 30 red_model entries.
+2024-08-05 23:07:50,847 - INFO - Processed file productlist_response_2024-08-05_225900.json: extracted 29 red_model entries.
+2024-08-05 23:07:50,847 - INFO - Processed file productlist_response_2024-08-05_225919.json: extracted 29 red_model entries.
+2024-08-05 23:07:50,848 - INFO - Extracted red_model data has been written to red_models.csv
